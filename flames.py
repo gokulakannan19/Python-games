@@ -33,8 +33,8 @@ def find_similar_char():
                 name1 = name1.replace(i, "", 1)
                 name2 = name2.replace(j, "", 1)
                 break
-    print(name1)
-    print(name2)
+#    print(name1)
+#    print(name2)
     return name1, name2
 
 
@@ -42,7 +42,7 @@ def find_similar_char():
 def find_length_of_names():
     global name1, name2, names_length
     names_length = len(name1 + name2)
-    print(names_length)
+#    print(names_length)
 
 
 # function to iterate over flames
@@ -58,7 +58,7 @@ def put_flames():
                 flames_list = right + left
             else:
                 flames_list = flames_list[:len(flames_list)-1]
-        print(f'Relationship between {name1} and {name2}:{flames_list[0]}')
+        print(f'Relationship status: {flames_list[0]}')
     else:
         print("Enter different names")
 
